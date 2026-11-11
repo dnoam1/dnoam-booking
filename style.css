@@ -1,4 +1,6 @@
+*,*::before,*::after{box-sizing:border-box}
 body{font-family:system-ui,sans-serif;max-width:640px;margin:0 auto;padding:16px;line-height:1.6}
 label{display:block;margin:12px 0}input,textarea{display:block;width:100%;padding:8px;font:inherit}
 button{padding:10px 20px;font:inherit}.hp{position:absolute;left:-9999px}
 .free{color:#1a7f4b}.held{color:#b7791f}.taken{color:#c53030}
+.demo{background:#fff4d6;padding:8px 12px;border-radius:4px}
