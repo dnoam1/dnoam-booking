@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>הזמנת אולם בית הכנסת</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>הזמנת אולם בית הכנסת</h1><p>בחרו תאריך ושלחו בקשה. נחזור אליכם לאישור.</p></header>
+<main>
+<section id="calendar" aria-label="יומן זמינות"><h2>זמינות</h2><div id="cal">היומן ייטען כאן</div>
+<p class="legend"><span class="free">פנוי</span> <span class="held">מוחזק</span> <span class="taken">תפוס</span></p></section>
+<section aria-label="טופס בקשה"><h2>בקשת הזמנה</h2>
+<form id="booking">
+<label>שם מלא <input name="name" required></label>
+<label>טלפון <input name="phone" type="tel" required></label>
+<label>סוג האירוע <input name="event_type" required></label>
+<label>תאריך <input name="date" type="date" required></label>
+<label>מספר אורחים <input name="guests" type="number" min="1"></label>
+<label>הערות <textarea name="notes"></textarea></label>
+<input name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button type="submit">שליחת בקשה</button>
+<p id="status" role="status"></p>
+</form></section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
